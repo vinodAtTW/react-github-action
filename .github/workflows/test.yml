@@ -4,13 +4,13 @@ jobs:
     react-test:
         runs-on: ubuntu-latest
         steps:
-          - name: Get Code on above server (ubuntu-latest)
+          - name: Get code
             uses: actions/checkout@v4
           - name: Install Node Js
             uses: actions/setup-node@v3
             with:
                 node-version: 18
-          - name: Instal Dependencies
+          - name: Install dependencies
             run: npm ci 
           - name: Run Test
             run: npm test
