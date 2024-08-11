@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Get Code on above server (ubuntu-latest)
-            uses: actions/chckout@v4
+            uses: actions/checkout@v4
           - name: Install Node Js
             uses: actions/setup-node@v3
             with:
